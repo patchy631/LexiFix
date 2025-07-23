@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiFix - Text Highlighter</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LexiFix</h1>
+            <p class="subtitle">Text Highlighter & Grammar Tool</p>
+        </header>
+
+        <main>
+            <!-- Highlighting Controls -->
+            <section class="control-section">
+                <h2>Text Highlighting</h2>
+                
+                <!-- Enable/Disable Toggle -->
+                <div class="control-group">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="highlightToggle" checked>
+                        <span class="toggle-slider"></span>
+                        Enable Highlighting
+                    </label>
+                </div>
+
+                <!-- Highlight Color Picker -->
+                <div class="control-group">
+                    <label for="colorPicker">Highlight Color:</label>
+                    <input type="color" id="colorPicker" value="#ffff00">
+                </div>
+
+                <!-- Manual Highlight Button -->
+                <div class="control-group">
+                    <button id="highlightBtn" class="btn btn-primary">
+                        Highlight Selected Text
+                    </button>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="control-section">
+                <h2>Quick Actions</h2>
+                <div class="shortcuts">
+                    <div class="shortcut-item">
+                        <span class="shortcut-key">Double-click</span>
+                        <span class="shortcut-desc">Highlight text</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="shortcut-key">Ctrl+Shift+H</span>
+                        <span class="shortcut-desc">Manual highlight</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Status -->
+            <section class="status-section">
+                <div id="status" class="status-message">
+                    Ready to highlight!
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="version">v1.0.0</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 

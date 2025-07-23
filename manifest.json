@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "LexiFix - Text Highlighter",
+  "version": "1.0.0",
+  "description": "A simple text highlighter and grammar correction tool",
+  
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": []
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LexiFix Text Highlighter"
+  }
+} 
